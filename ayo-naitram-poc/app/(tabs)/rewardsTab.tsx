@@ -1,31 +1,18 @@
-import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
+import EditScreenInfo from "@/components/EditScreenInfo";
+import { Text, View } from "@/components/Themed";
+import { globalStyles, headerStyles } from "@/constants/styles";
+import { Image, ImageBackground } from "react-native";
+import Svg, { Path } from "react-native-svg";
+import { HStack, Box, ArrowLeftIcon, Icon } from "@gluestack-ui/themed";
+import Header from "@/components/Header";
 
 export default function TabOneScreen() {
+  const assetsPath = "../../assets/naitram";
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Rewards Tab</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/rewardsTab.tsx" />
+    <View style={globalStyles.container}>
+
+        <Header />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});
