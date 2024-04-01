@@ -39,7 +39,7 @@ const Earnings = () => {
         </View>
 
         <View>
-          <Image source={require(`${assetsPath}/trophy.webp`)} />
+          <Image alt="Trophy Image" source={require(`${assetsPath}/trophy.webp`)} />
         </View>
       </View>
     </Accordion>
