@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <ImageBackground
-      source={require(`${assetsPath}/searchHeading.png`)}
+      source={require(`${assetsPath}/heading.jpg`)}
       style={headerStyles.backgroundImageStyle}
     >
       <View

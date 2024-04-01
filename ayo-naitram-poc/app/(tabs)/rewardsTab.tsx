@@ -1,18 +1,20 @@
-import EditScreenInfo from "@/components/EditScreenInfo";
-import { Text, View } from "@/components/Themed";
-import { globalStyles, headerStyles } from "@/constants/styles";
-import { Image, ImageBackground } from "react-native";
-import Svg, { Path } from "react-native-svg";
-import { HStack, Box, ArrowLeftIcon, Icon } from "@gluestack-ui/themed";
+import { globalStyles } from "@/constants/styles";
+import { View } from "@gluestack-ui/themed";
 import Header from "@/components/Header";
+import EarningsAccordion from "@/components/EarningsAccordion";
 
 export default function TabOneScreen() {
-  const assetsPath = "../../assets/naitram";
-
   return (
     <View style={globalStyles.container}>
-
-        <Header />
+      <Header />
+      <View
+        flexDirection="row"
+        justifyContent="space-between"
+        alignItems="center"
+        padding={10}
+      >
+        <EarningsAccordion />
+      </View>
     </View>
   );
 }
