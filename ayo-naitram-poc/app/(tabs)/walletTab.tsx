@@ -1,31 +1,29 @@
-import { StyleSheet } from 'react-native';
+import { globalStyles } from "@/constants/styles";
+import { View } from "@gluestack-ui/themed";
+import Header from "@/components/Header";
+import WalletTabs from "@/components/wallet/WalletTabs";
+import Collectables from "@/components/wallet/Collectables";
 
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
-
-export default function TabTwoScreen() {
+export default function WalletTab() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Wallet</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/walletTab.tsx" />
+    <View style={globalStyles.container}>
+      <Header />
+      <View
+        flexDirection="row"
+        justifyContent="space-between"
+        alignItems="center"
+        padding={10}
+      >
+        <WalletTabs />
+      </View>
+      <View
+        flexDirection="row"
+        justifyContent="space-between"
+        alignItems="center"
+        padding={10}
+      >
+        <Collectables />
+      </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});
