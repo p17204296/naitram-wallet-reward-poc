@@ -1,20 +1,28 @@
+import React from "react";
+import { ScrollView } from "react-native";
 import { globalStyles } from "@/constants/styles";
 import { View } from "@gluestack-ui/themed";
 import Header from "@/components/Header";
 import EarningsAccordion from "@/components/EarningsAccordion";
+import MyItems from "@/components/MyItems";
+import ClaimableRewardsList from "@/components/ClaimableRewardsList";
 
-export default function TabOneScreen() {
+export default function RewardsTab() {
   return (
-    <View style={globalStyles.container}>
+    <ScrollView
+      style={globalStyles.container}
+      showsVerticalScrollIndicator={false}
+    >
       <Header />
-      <View
-        flexDirection="row"
-        justifyContent="space-between"
-        alignItems="center"
-        padding={10}
-      >
+      <View padding={10}>
         <EarningsAccordion />
       </View>
-    </View>
+      <View padding={10}>
+        <MyItems />
+      </View>
+      <View padding={10}>
+        <ClaimableRewardsList />
+      </View>
+    </ScrollView>
   );
 }

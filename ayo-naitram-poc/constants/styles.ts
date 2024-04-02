@@ -17,7 +17,9 @@ export const globalStyles = StyleSheet.create({
     color: "white",
     fontSize: 24,
   },
-  container: {},
+  container: {
+    backgroundColor: colors.black,
+  },
   title: {
     fontSize: 20,
     fontWeight: "bold",
@@ -170,5 +172,176 @@ export const earningsAccordionStyles = StyleSheet.create({
     flex: 1,
     aspectRatio: 1, // Maintain aspect ratio
     height: '100%', // Set height to 100
+  },
+});
+
+export const MyItemsStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  heading: {
+    fontSize: 24,
+    color: "#ffffff",
+    textAlign: "left",
+    marginLeft: 20,
+    marginTop: 10,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  gradient: {
+    paddingTop: 20,
+    paddingBottom: 10,
+    borderRadius: 10,
+  },
+  card: {
+    borderRadius: 10,
+    marginHorizontal: 10,
+    padding: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    width: 280,
+  },
+  title: {
+    fontSize: 20,
+    color: "#ffffff",
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  description: {
+    fontSize: 16,
+    marginBottom: 10,
+    color: "#ffffff",
+  },
+  actionButton: {
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+  },
+  actionText: {
+    color: "#ffffff",
+    fontWeight: "bold",
+    fontSize: 16,
+  },
+});
+
+export const claimableRewardsListStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 10,
+    backgroundColor: "#000000",
+  },
+  heading: {
+    fontSize: 24,
+    color: "#ffffff",
+    textAlign: "left",
+    marginTop: 10,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  scrollContainer: {
+    flexGrow: 1,
+    justifyContent: "flex-start",
+  },
+  rewardContainer: {
+    marginBottom: 20,
+    padding: 10,
+    backgroundColor: "#fff",
+    borderRadius: 8,
+    elevation: 2,
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 5,
+  },
+  description: {
+    fontSize: 16,
+    marginBottom: 10,
+  },
+  actionButton: {
+    backgroundColor: "#009540",
+    padding: 10,
+    borderRadius: 5,
+    alignItems: "center",
+  },
+  actionText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+});
+
+export const walletTabsStyles = StyleSheet.create({
+  container: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    paddingHorizontal: 20,
+    marginTop: 10,
+  },
+  tabButton: {
+    backgroundColor: "#010300",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+  },
+  tabButtonTwo: {
+    backgroundColor: "#009540",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+  },
+  tabText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+});
+
+export const collectablesStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  heading: {
+    fontSize: 24,
+    color: "#ffffff",
+    textAlign: "left",
+    marginLeft: 20,
+    marginTop: 10,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  gradient: {
+    paddingTop: 20,
+    paddingBottom: 10,
+    borderRadius: 10,
+  },
+  card: {
+    borderRadius: 10,
+    marginHorizontal: 10,
+    padding: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    width: 290,
+  },
+  title: {
+    fontSize: 20,
+    color: "#ffffff",
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  description: {
+    fontSize: 16,
+    marginBottom: 10,
+    color: "#ffffff",
+  },
+  actionButton: {
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+  },
+  actionText: {
+    color: "#ffffff",
+    fontWeight: "bold",
+    fontSize: 16,
   },
 });

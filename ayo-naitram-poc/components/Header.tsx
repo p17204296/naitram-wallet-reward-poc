@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  View,
-  Text,
-  Icon,
-  ArrowLeftIcon,
-  Avatar,
-} from "@gluestack-ui/themed";
+import { View, Text, Icon, ArrowLeftIcon, Avatar, AvatarImage } from "@gluestack-ui/themed";
 import { headerStyles } from "@/constants/styles";
 import { ImageBackground } from "react-native";
 
@@ -36,7 +30,10 @@ const Header = () => {
 
         {/* Right Column */}
         <View>
-          <Avatar/>
+          <Avatar>
+
+          <AvatarImage source={require(`${assetsPath}/token.webp`)} />
+          </Avatar>
         </View>
       </View>
     </ImageBackground>
