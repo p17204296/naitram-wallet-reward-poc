@@ -1,9 +1,21 @@
 import React from "react";
-import { View, Text, Icon, ArrowLeftIcon, Avatar, AvatarImage } from "@gluestack-ui/themed";
+import {
+  View,
+  Text,
+  Icon,
+  ArrowLeftIcon,
+  Avatar,
+  AvatarImage,
+} from "@gluestack-ui/themed";
 import { headerStyles } from "@/constants/styles";
 import { ImageBackground } from "react-native";
 
-const Header = () => {
+interface HeaderProps {
+  headingText: string;
+  subHeadingText: string;
+}
+
+const Header = ({ headingText, subHeadingText }: HeaderProps) => {
   const assetsPath = "../assets/naitram";
 
   return (
@@ -24,15 +36,14 @@ const Header = () => {
 
         {/* Center Column */}
         <View flexDirection="column" alignItems="center">
-          <Text style={headerStyles.profileHeadingStyle}>Your Rewards</Text>
-          <Text style={headerStyles.profileSubheadingStyle}>Ways to earn</Text>
+          <Text style={headerStyles.profileHeadingStyle}>{headingText}</Text>
+          <Text style={headerStyles.profileSubheadingStyle}>{subHeadingText}</Text>
         </View>
 
         {/* Right Column */}
         <View>
           <Avatar>
-
-          <AvatarImage source={require(`${assetsPath}/token.webp`)} />
+            <AvatarImage source={require(`${assetsPath}/token.webp`)} />
           </Avatar>
         </View>
       </View>

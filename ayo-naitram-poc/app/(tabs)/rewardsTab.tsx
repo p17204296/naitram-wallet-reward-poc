@@ -13,7 +13,7 @@ export default function RewardsTab() {
       style={globalStyles.container}
       showsVerticalScrollIndicator={false}
     >
-      <Header />
+      <Header headingText="Your Rewards" subHeadingText="Ways to earn" />
       <View padding={10}>
         <EarningsAccordion />
       </View>

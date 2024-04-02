@@ -7,7 +7,7 @@ import Collectables from "@/components/wallet/Collectables";
 export default function WalletTab() {
   return (
     <View style={globalStyles.container}>
-      <Header />
+      <Header headingText="Your Wallet" subHeadingText="Ways to earn" />
       <View
         flexDirection="row"
         justifyContent="space-between"
